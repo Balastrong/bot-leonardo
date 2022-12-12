@@ -1,3 +1,4 @@
+import { addListeners } from "clientEvents";
 import { Client, GatewayIntentBits } from "discord.js";
 require("dotenv").config();
 
@@ -10,18 +11,10 @@ const client = new Client({
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildMembers,
   ],
 });
 
-client.on("ready", () => {
-  console.log("Bot is ready!");
-});
-
-client.on("messageCreate", (message) => {
-  console.log(message.content);
-  if (message.content === "ping") {
-    message.reply("Not gonna say pong!");
-  }
-});
+addListeners(client);
 
 client.login(TOKEN);

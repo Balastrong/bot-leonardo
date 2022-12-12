@@ -1,0 +1,11 @@
+export const GENERAL_CHANNEL_ID = "1044367890956169321";
+export const INTRODUCE_YOURSELF_CHANNEL_ID = "1045124155458203649";
+
+/*
+Dev Leonardo's Community
+ 1044367890956169321 - General
+ 1045124155458203649 - Introduce yourself
+
+Test Leonardo
+ 1051960916830335100 - General
+*/
