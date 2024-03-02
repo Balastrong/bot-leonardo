@@ -4,18 +4,24 @@
   "description": "",
   "scripts": {
     "start": "ts-node src/index.ts",
-    "watch": "nodemon --exec ts-node src/index.ts"
+    "watch": "nodemon --exec ts-node src/index.ts",
+    "test": "borp",
+    "test:watch": "borp --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^18.11.13",
-    "discord.js": "^14.7.1",
-    "dotenv": "^16.0.3",
-    "nodemon": "^2.0.20",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.9.4",
-    "tsconfig-paths": "^4.1.1"
+    "@types/node": "^18.19.21",
+    "cron": "^3.1.6",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "borp": "^0.9.1"
   }
 }
