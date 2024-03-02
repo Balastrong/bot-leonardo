@@ -93,4 +93,22 @@ export const quizzes: Quiz[] = [
     context: "The `console` object has so many useful methods!",
     learnMoreUrl: "https://youtube.com/shorts/1cnerJildcQ",
   },
+  {
+    id: "9",
+    question: "What is the library zod used for?",
+    answers: [
+      "Fetching data from APIs",
+      "Rendering components in React",
+      "Defining schemas for data validation",
+      "Managing the connection and communication with a database",
+    ],
+    correctAnswerIndex: 2,
+    learnMoreUrl: "https://github.com/colinhacks/zod",
+  },
+  {
+    id: "10",
+    question: "Which one of these is NOT a testing library?",
+    answers: ["valibot", "jest", "vitest", "node:test"],
+    correctAnswerIndex: 0,
+  },
 ];
