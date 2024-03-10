@@ -18,7 +18,7 @@ const quiz1: Quiz = {
 
 describe("quizMessageBuilder", () => {
   it("should return a message with the quiz question and answers", () => {
-    const expected = `It's quiz time! 🤔
+    const expected = `It's quiz time! <@&1216364701051519016>
 **What is the output of \`0.1 + 0.2\` in JavaScript?**
 
 🇦 - 0.3
@@ -41,7 +41,7 @@ describe("answerMessageBuilder", () => {
 _This is due to floating point precision in JavaScript._
 Learn more: https://youtube.com/shorts/EeUXQgm7ic4
 
-See you soon for another quiz! 🎉`;
+<@&1216364701051519016> see you soon for another quiz! 🎉`;
     const actual = answerMessageBuilder(quiz1);
     strictEqual(actual, expected);
   });
@@ -49,7 +49,7 @@ See you soon for another quiz! 🎉`;
   it("should print the correct spaced when there is not extra content", () => {
     const expected = `The answer is... **🇧 0.30000000000000004**!
 
-See you soon for another quiz! 🎉`;
+<@&1216364701051519016> see you soon for another quiz! 🎉`;
     const actual = answerMessageBuilder({
       ...quiz1,
       learnMoreUrl: undefined,

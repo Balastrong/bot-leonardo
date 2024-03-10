@@ -1,4 +1,6 @@
+import { roleMention } from "discord.js";
 import { Quiz } from "./data";
+import { QUIZ_ROLE_ID } from "../utils";
 
 export const answerEmojis = ["🇦", "🇧", "🇨", "🇩"];
 
@@ -7,7 +9,7 @@ export function quizMessageBuilder(quiz: Quiz) {
     .map((answer, index) => `${answerEmojis[index]} - ${answer}`)
     .join("\n");
 
-  return `It's quiz time! 🤔
+  return `It's quiz time! ${roleMention(QUIZ_ROLE_ID)}
 **${quiz.question}**
 
 ${answers}
@@ -29,7 +31,7 @@ export function answerMessageBuilder(quiz: Quiz) {
     quiz.answers[quiz.correctAnswerIndex]
   }**!${extrasBlock ? `\n${extrasBlock}` : ""}
 
-See you soon for another quiz! 🎉`;
+${roleMention(QUIZ_ROLE_ID)} see you soon for another quiz! 🎉`;
 }
 
 export function getIdFromMessage(message: string) {
