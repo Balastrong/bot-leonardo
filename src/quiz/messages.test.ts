@@ -41,7 +41,9 @@ describe("answerMessageBuilder", () => {
 _This is due to floating point precision in JavaScript._
 Learn more: https://youtube.com/shorts/EeUXQgm7ic4
 
-<@&1216364701051519016> see you soon for another quiz! 🎉`;
+<@&1216364701051519016> see you soon for another quiz! 🎉
+
+Want to get notified when a new Quiz spawns? React to this message with the 🏆 emoji!`;
     const actual = answerMessageBuilder(quiz1);
     strictEqual(actual, expected);
   });
@@ -49,7 +51,9 @@ Learn more: https://youtube.com/shorts/EeUXQgm7ic4
   it("should print the correct spaced when there is not extra content", () => {
     const expected = `The answer is... **🇧 0.30000000000000004**!
 
-<@&1216364701051519016> see you soon for another quiz! 🎉`;
+<@&1216364701051519016> see you soon for another quiz! 🎉
+
+Want to get notified when a new Quiz spawns? React to this message with the 🏆 emoji!`;
     const actual = answerMessageBuilder({
       ...quiz1,
       learnMoreUrl: undefined,

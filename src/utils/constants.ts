@@ -10,6 +10,11 @@ export const BOT_TEST_CHANNEL_ID = "1051265233727017085";
 export const QUIZ_ROLE_ID = "1216364701051519016";
 //#endregion
 
+//#region Emojis
+export const QUIZ_EMOJI_ID = "🏆";
+
+//#endregion
+
 /*
 Dev Leonardo's Community
  1044367890956169321 - General

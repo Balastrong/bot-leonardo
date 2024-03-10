@@ -31,7 +31,9 @@ export function answerMessageBuilder(quiz: Quiz) {
     quiz.answers[quiz.correctAnswerIndex]
   }**!${extrasBlock ? `\n${extrasBlock}` : ""}
 
-${roleMention(QUIZ_ROLE_ID)} see you soon for another quiz! 🎉`;
+${roleMention(QUIZ_ROLE_ID)} see you soon for another quiz! 🎉
+
+Want to get notified when a new Quiz spawns? React to this message with the 🏆 emoji!`;
 }
 
 export function getIdFromMessage(message: string) {
