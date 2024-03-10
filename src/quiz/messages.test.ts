@@ -26,7 +26,7 @@ describe("quizMessageBuilder", () => {
 🇨 - 0.10.2
 🇩 - 0.2
 
-React to this message with the correct answer! Come back later for the solutions 🏆
+React to this message with the correct answer! Come back later for the solutions ⭐️
 
 _(Quiz ID: 1)_`;
     const actual = quizMessageBuilder(quiz1);

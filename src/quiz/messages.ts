@@ -14,7 +14,7 @@ export function quizMessageBuilder(quiz: Quiz) {
 
 ${answers}
 
-React to this message with the correct answer! Come back later for the solutions 🏆
+React to this message with the correct answer! Come back later for the solutions ⭐️
 
 _(Quiz ID: ${quiz.id})_`;
 }
