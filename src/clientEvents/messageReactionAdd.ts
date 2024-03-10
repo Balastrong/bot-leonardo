@@ -14,7 +14,6 @@ export const messageReactionAdd = async (
   reaction: MessageReaction | PartialMessageReaction,
   user: User | PartialUser
 ) => {
-  console.log("X");
   if (reaction.partial) {
     try {
       await reaction.fetch();
@@ -39,7 +38,6 @@ const addQuizRole = async (
     return;
   }
 
-  console.log(reaction);
   if (reaction.emoji.name !== QUIZ_EMOJI_NAME) {
     return;
   }
