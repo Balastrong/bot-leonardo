@@ -65,6 +65,7 @@ async function sendAnswer(channel: TextChannel) {
 
   const answerMessage = await quizMessage.reply(answerMessageBuilder(quiz));
   answerMessage?.suppressEmbeds();
+  answerMessage.react("🏆");
 }
 
 function pickRandomQuiz() {
